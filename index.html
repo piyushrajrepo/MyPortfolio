@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Amisha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lavender;
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(88, 88, 192);
+            padding: 0 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 16px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(158, 158, 245);
+            font-size: 0.9rem;
+        }
+
+        .left {
+            font-size: 1.4rem;
+            cursor: pointer;
+        }
+
+        .firstSection {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .leftsection {
+            margin-bottom: 20px;
+            color: rgb(148, 79, 211);
+        }
+
+        .rightsection img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        #element {
+            color: rgb(148, 79, 211);
+        }
+
+        .secondsection {
+            max-width: 90vw;
+            margin: auto;
+            padding: 20px;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(139, 139, 199);
+            height: 1.2px;
+            margin: 40px 0;
+        }
+
+        .text-gray {
+            color: gray;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .secondsection .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .secondsection .vertical {
+            width: 100%;
+            max-width: 400px;
+            background: white;
+            margin: 20px 0;
+            padding: 10px;
+            text-align: left;
+            border-radius: 10px;
+        }
+
+        .vertical img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        .vertical-title {
+            color: rgb(19, 19, 47);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .vetical-desc {
+            color: gray;
+            font-size: 1rem;
+        }
+
+        .From {
+            color: rgb(107, 165, 215);
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+
+        .Department {
+            color: rgb(76, 209, 178);
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 15px 0;
+            background: #444;
+            color: lavender;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .firstSection {
+                flex-direction: row;
+                text-align: let;
+            }
+
+            .leftsection {
+                flex: 1;
+            }
+
+            .rightsection {
+                flex: 1;
+            }
+
+            .secondsection .box {
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+            .secondsection .vertical {
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Amisha's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About me</a></li>
+                    <li><a href="contactme.html">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftsection">
+                Hello! My Name is Kumari Amisha,
+                <div>an aspiring Developer & passionate in Coding.</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="pg.png.png" alt="Profile Picture">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far.</span>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="Primary.png" alt="Primary School Image">
+                    <div class="vertical-title">Primary Schooling (2008-2017)</div>
+                    <div class="From">From - D.N High School (B.S.E.B)</div>
+                    <div class="vetical-desc">
+                        Completing class 10th with impressive academic results is a significant milestone that opens numerous pathways for further education and career development.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="12th.png" alt="Senior Secondary School Image">
+                    <div class="vertical-title">Senior Secondary Schooling (2017-2019)</div>
+                    <div class="From">From -D.N High School (B.S.E.B) </div>
+                    <div class="vetical-desc">
+                        Completing class 12th with impressive academic results is a significant milestone that opens numerous pathways for further education and career development.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="graduation.jpg" alt="Graduation Image">
+                    <div class="vertical-title">Diploma (2019-2021)</div>
+                    <div class="From">From - Buddha Institute of Technology</div>
+                    <div class="Department">Department - Diploma in Electrical Engineering.</div>
+                    <div class="vetical-desc">
+                        I have completed Diploma program in Electrical Engineering.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Student', 'Electrical Engineer', 'Coder', 'Tech Enthusiast'],
+            typeSpeed: 70,
+        });
+    </script>
+    <div class="footer">
+        <p>&copy; Copyright 2024 / All rights reserved /Amisha's Portfolio</p>
+    </div>
+</body>
+
+</html>

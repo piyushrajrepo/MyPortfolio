@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            color: white;
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(88, 88, 192);
+            padding: 0 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 16px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(158, 158, 245);
+            font-size: 0.9rem;
+        }
+
+        .left {
+            font-size: 1.4rem;
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            background: lavender;
+            padding: 20px;
+            box-shadow: 0 0 20px rgb(73, 73, 73);
+            border-radius: 10px;
+        }
+
+        .profile-pic {
+            display: block;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+        }
+
+        .bio p {
+            color: rgb(55, 55, 56);
+            margin: 15px 0;
+            line-height: 1.5;
+            font-size: 1.2rem;
+        }
+
+        .bio,
+        .skills {
+            margin: 20px 0;
+        }
+
+        .skills h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-align: center;
+            color: rgb(55, 55, 56);
+        }
+
+
+        .technicalskill h3,
+        .softskill h3 {
+            font-size: 1.5rem;
+            color: rgb(76, 107, 209);
+            text-align: left;
+        }
+
+        .technicalskill ul li,
+        .softskill ul li {
+            font-size: 1.2rem;
+            color: rgb(55, 55, 56);
+            text-align: left;
+            list-style: none;
+            font-weight: bold;
+        }
+
+        .professional-journey {
+            padding: 20px 0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 16px;
+            padding: 21px 0;
+            background: #444;
+        }
+
+        .footer p {
+            color: lavender;
+        }
+
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #ddd;
+        }
+
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-content {
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            position: relative;
+            border-radius: 5px;
+            color: #333;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            right: -8px;
+            width: 0;
+            height: 0;
+            border: 8px solid transparent;
+            border-left-color: #fff;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: -8px;
+            width: 0;
+            height: 0;
+            border: 8px solid transparent;
+            border-right-color: #fff;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        span {
+            display: block;
+            margin: 10px 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        h4 {
+            margin-top: 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            nav h1 {
+                font-size: 1.5rem;
+            }
+
+            .bio p,
+            .skills h2,
+            .technicalskill h3,
+            .softskill h3,
+            .technicalskill ul li,
+            .softskill ul li {
+                font-size: 1rem;
+            }
+
+            .timeline::before {
+                left: 5%;
+            }
+
+            .timeline-item {
+                width: 90%;
+                left: 5%;
+            }
+
+            .timeline-item:nth-child(odd),
+            .timeline-item:nth-child(even) {
+                left: 5%;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-content::after,
+            .timeline-item:nth-child(even) .timeline-content::after {
+                left: -8px;
+                border-right-color: #fff;
+                border-left-color: transparent;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Amisha's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About me</a></li>
+                    <li><a href="contactme.html">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <img src="Amisha.jpg" alt="Gopal's Profile Picture" class="profile-pic">
+        <div class="bio">
+            <p>👋 Hey there! I’m Kumari Amisha—a curious soul with a passion for learning and creating. My educational
+                journey started at DN High School, where I soaked up knowledge like a sponge. Later, I delved into the
+                world of electrical engineering at the Buddha Institute of Technology, where circuits and electrons
+                danced in harmony.
+
+                Fast forward to today—I’m part of the Anand Automotive Industry, where gears turn, engines roar, and
+                innovation fuels our drive. It’s both challenging and rewarding, and I’m proud to contribute to this
+                dynamic field.
+
+                But wait, there’s more! Beyond the workshop, I’m on a data adventure. Python is my trusty sidekick as I
+                explore datasets, create visualizations, and uncover hidden patterns. Learning never stops, and I’m here
+                for the ride.
+            </p>
+        </div>
+        <div class="skills">
+            <h2>Skills and Expertise</h2>
+            <section class="firstsection">
+                <div class="technicalskill">
+                    <h3>Technical Skills - Aspiring Full Stack Developer</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Python</li>
+                        
+                    </ul>
+                </div>
+                <div class="softskill">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Effective Communication</li>
+                        <li>Interpersonal Skills</li>
+                        <li>Teamwork</li>
+                        <li>Creative Problem Solving</li>
+                        <li>Project Management</li>
+                        <li>Leadership</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Amisha's Portfolio. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
